@@ -63,6 +63,16 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   text-transform: uppercase;
 }
 
+.pixel-emoji {
+  font-family: "Mona12 Color Emoji", "Mona12 Emoji", "Mona12", monospace;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  image-rendering: pixelated;
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+}
+
 /* ══════════════════════════════
    NAVBAR
    ══════════════════════════════ */
@@ -90,6 +100,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   align-items: center;
   gap: 0.5rem;
   letter-spacing: 0.05em;
+}
+.nav__logo-icon {
+  font-size: 0.9rem;
 }
 .nav__links {
   display: flex;
@@ -158,6 +171,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   margin-bottom: 2.5rem;
   position: relative;
   z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
 }
 .hero-title {
   font-family: 'Mona12', 'Mona10', var(--font-pixel), monospace;

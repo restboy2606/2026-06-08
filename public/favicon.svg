@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="PIXELFORGE STUDIOS favicon">
+  <rect width="64" height="64" rx="12" fill="#080808"/>
+  <rect x="7" y="7" width="50" height="50" rx="10" fill="#0f0f0f" stroke="#2563eb" stroke-width="2"/>
+  <path d="M32 12L39 19L35 23L41 29L34 36L32 34L30 36L23 29L29 23L25 19L32 12Z" fill="#2563eb"/>
+  <path d="M28 36H36V42H42V48H36V54H28V48H22V42H28V36Z" fill="#e8e8e8"/>
+</svg>

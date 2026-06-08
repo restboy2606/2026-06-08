@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <header className={`nav ${scrolled ? 'nav--scrolled' : ''}`}>
       <a href="#" className="nav__logo">
-        <span className="nav__logo-icon">⚒</span>
+        <span className="pixel-emoji nav__logo-icon" aria-hidden="true">⚒</span>
         PIXELFORGE
       </a>
 

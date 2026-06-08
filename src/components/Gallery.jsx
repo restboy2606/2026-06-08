@@ -28,7 +28,7 @@ function MarqueeRow({ items, reverse }) {
           <div key={i} className={`gallery-card ${item.cls}`}>
             <div className="gallery-card__overlay" aria-hidden="true" />
             <div className="gallery-card__inner">
-              <span className="gallery-card__emoji">{item.emoji}</span>
+              <span className="gallery-card__emoji pixel-emoji">{item.emoji}</span>
               <span className="gallery-card__label">{item.label}</span>
             </div>
           </div>

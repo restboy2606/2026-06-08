@@ -4,7 +4,8 @@ export default function Footer() {
       <div className="footer-main">
         <div className="footer-brand">
           <div className="footer-brand__logo">
-            ⚒ PIXELFORGE STUDIOS
+            <span className="pixel-emoji" aria-hidden="true">⚒</span>
+            {' '}PIXELFORGE STUDIOS
           </div>
           <p>
             비트 하나로 세계를 만듭니다.<br />

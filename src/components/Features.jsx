@@ -52,7 +52,7 @@ function GameScreen({ screen, emoji, screenTitle, hp, mp, dotColor }) {
           <span className="game-screen__title">{screenTitle}</span>
         </div>
         <div className="game-screen__body">
-          <div className="game-sprite">{emoji}</div>
+          <div className="game-sprite pixel-emoji">{emoji}</div>
           <div className="game-stats">
             <div className="game-stat-row">
               <span className="game-stat-label">HP</span>
