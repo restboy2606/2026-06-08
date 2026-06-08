@@ -160,14 +160,16 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   z-index: 1;
 }
 .hero-title {
-  font-size: clamp(2.8rem, 8.5vw, 6.5rem);
-  font-weight: 900;
+  font-family: 'Mona12', 'Mona10', var(--font-pixel), monospace;
+  font-size: clamp(2.2rem, 7vw, 5.5rem);
+  font-weight: 400;
   color: var(--text);
-  line-height: 1.06;
-  letter-spacing: -0.03em;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
   margin-bottom: 1.4rem;
   position: relative;
   z-index: 1;
+  image-rendering: pixelated;
 }
 .hero-title em {
   font-style: normal;
@@ -245,12 +247,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   margin: 0 auto 5rem;
 }
 .features-header h2 {
-  font-size: clamp(2rem, 4.5vw, 3.2rem);
-  font-weight: 900;
-  letter-spacing: -0.03em;
-  line-height: 1.12;
+  font-family: 'Mona12', 'Mona10', var(--font-pixel), monospace;
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
   margin-top: 1rem;
   color: var(--text);
+  image-rendering: pixelated;
 }
 
 .feature-item {
@@ -275,12 +279,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: block;
 }
 .feature-text h3 {
-  font-size: clamp(1.5rem, 2.8vw, 2.2rem);
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
+  font-family: 'Mona12', 'Mona10', var(--font-pixel), monospace;
+  font-size: clamp(1.2rem, 2.2vw, 1.8rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
   margin-bottom: 1rem;
   color: var(--text);
+  image-rendering: pixelated;
 }
 .feature-text h3 small {
   display: block;
@@ -391,12 +397,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   margin: 0 auto 3.5rem;
 }
 .gallery-header h2 {
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
-  font-weight: 900;
+  font-family: 'Mona12', 'Mona10', var(--font-pixel), monospace;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 400;
   color: var(--text);
-  letter-spacing: -0.03em;
-  line-height: 1.12;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
   margin-top: 1rem;
+  image-rendering: pixelated;
 }
 
 .marquee-row { overflow: hidden; margin-bottom: 1.2rem; }
@@ -467,12 +475,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .bottom-cta-inner { position: relative; z-index: 1; max-width: 620px; margin: 0 auto; }
 .bottom-cta h2 {
-  font-size: clamp(2.2rem, 5.5vw, 4rem);
-  font-weight: 900;
+  font-family: 'Mona12', 'Mona10', var(--font-pixel), monospace;
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  font-weight: 400;
   color: var(--text);
-  letter-spacing: -0.03em;
-  line-height: 1.1;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
   margin-bottom: 1.2rem;
+  image-rendering: pixelated;
 }
 .bottom-cta p {
   font-size: 1rem;

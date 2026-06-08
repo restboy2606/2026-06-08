@@ -19,9 +19,7 @@ export default function Navbar() {
       <nav>
         <ul className="nav__links">
           <li><a href="#features">Games</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#testimonials">Reviews</a></li>
-          <li><a href="#cta">About</a></li>
+          <li><a href="#cta">Contact</a></li>
         </ul>
       </nav>
 
