@@ -1,27 +1,28 @@
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="hero__grid-bg" />
-      <div className="hero__badge">EST. 2025.12.25</div>
-      <h1 className="hero__title">
-        PIXEL<span>FORGE</span>
-        <br />
-        STUDIOS
+      <div className="hero-bg" aria-hidden="true" />
+
+      <div className="hero-badge">⚒ EST. 2025.12.25 · MOBILE PIXEL RPG</div>
+
+      <h1 className="hero-title">
+        PIXEL BY PIXEL,<br />
+        WE BUILD <em>WORLDS</em>
       </h1>
-      <p className="hero__subtitle">
-        비트 바이 비트, 세계를 만들다
-        <br />
+
+      <p className="hero-sub">
+        포켓몬 1세대의 그 설렘을 다시 손 안에서.<br />
         레트로 픽셀 RPG 모바일 게임 개발사
       </p>
-      <div className="hero__cta-group">
-        <a href="#games" className="btn-pixel btn-pixel--primary">
-          ▶ OUR GAMES
-        </a>
-        <a href="#contact" className="btn-pixel btn-pixel--outline">
-          ✉ CONTACT US
-        </a>
+
+      <a href="#features" className="btn-glass">
+        게임 살펴보기 <span className="arrow">→</span>
+      </a>
+
+      <div className="hero-scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div className="scroll-line" />
       </div>
-      <div className="hero__scroll-hint">▼ SCROLL DOWN ▼</div>
     </section>
   )
 }
