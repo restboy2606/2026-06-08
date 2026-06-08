@@ -14,12 +14,12 @@ export default function Hero() {
       </h1>
 
       <p className="hero-sub">
-        포켓몬 1세대의 그 설렘을 다시 손 안에서.<br />
-        레트로 픽셀 RPG 모바일 게임 개발사
+        손맛 좋은 픽셀 클리커부터 작게 시작합니다.<br />
+        클릭하고, 터뜨리고, 비트를 모으세요.
       </p>
 
-      <a href="#features" className="btn-glass">
-        게임 살펴보기 <span className="arrow">→</span>
+      <a href="#play" className="btn-glass">
+        바로 플레이 <span className="arrow">→</span>
       </a>
     </section>
   )

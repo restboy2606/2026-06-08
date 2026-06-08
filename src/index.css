@@ -63,6 +63,21 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   text-transform: uppercase;
 }
 
+.pill {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  font-family: var(--font-pixel-sm);
+  font-size: 0.5rem;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  text-transform: uppercase;
+  border: 1px solid rgba(37,99,235,0.28);
+  background: var(--accent-dim);
+  padding: 0.46rem 0.78rem;
+  border-radius: 999px;
+}
+
 .pixel-emoji {
   font-family: "Mona12 Color Emoji", "Mona12 Emoji", "Mona12", monospace;
   font-weight: 400;
@@ -120,6 +135,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .nav__links a:hover { color: var(--text); }
 .nav__cta {
+  font-family: var(--font-pixel-sm);
   font-size: 0.82rem;
   font-weight: 700;
   color: #fff;
@@ -203,10 +219,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* Glassmorphism CTA */
 .btn-glass {
+  font-family: var(--font-pixel-sm);
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  font-size: 0.95rem;
+  font-size: 0.72rem;
   font-weight: 700;
   color: var(--text);
   background: rgba(255,255,255,0.06);
@@ -233,10 +250,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* Solid CTA */
 .btn-solid {
+  font-family: var(--font-pixel-sm);
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  font-size: 1rem;
+  font-size: 0.72rem;
   font-weight: 700;
   color: #fff;
   background: var(--accent);
@@ -250,6 +268,145 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transform: translateY(-2px);
 }
 .btn-solid:active { transform: translateY(0); }
+
+/* ══════════════════════════════
+   PLAYABLE CLICKER
+   ══════════════════════════════ */
+.clicker {
+  background: var(--bg);
+  padding: var(--section-py) var(--px);
+  border-top: 1px solid var(--border);
+}
+.clicker__shell {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: clamp(32px, 7vw, 90px);
+  align-items: center;
+}
+.clicker__copy h2 {
+  font-family: var(--font-pixel);
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  margin: 1rem 0 1.2rem;
+}
+.clicker__copy p {
+  max-width: 420px;
+  color: var(--text-muted);
+  line-height: 1.85;
+}
+.clicker__machine {
+  position: relative;
+  overflow: hidden;
+  min-height: 460px;
+  padding: clamp(18px, 4vw, 34px);
+  border: 1px solid rgba(37, 99, 235, 0.24);
+  border-radius: 14px;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(37,99,235,0.22), transparent 36%),
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px),
+    #090909;
+  background-size: auto, 22px 22px, 22px 22px, auto;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.03), 0 24px 80px rgba(0,0,0,0.45);
+}
+.clicker__top,
+.clicker__hud > div:not(.clicker__hp) {
+  font-family: var(--font-pixel-sm);
+  font-size: 0.52rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.core-button {
+  width: min(270px, 70vw);
+  height: min(270px, 70vw);
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin: 2.5rem auto;
+  border-radius: 18px;
+  border: 2px solid rgba(37,99,235,0.5);
+  background:
+    linear-gradient(135deg, rgba(37,99,235,0.18), rgba(255,255,255,0.02)),
+    #101010;
+  box-shadow: 0 0 38px rgba(37,99,235,0.18), inset 0 0 30px rgba(37,99,235,0.08);
+  transition: transform 0.08s, box-shadow 0.08s, border-color 0.08s;
+  touch-action: manipulation;
+}
+.core-button::after {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  border: 1px dashed rgba(255,255,255,0.08);
+  border-radius: 10px;
+}
+.core-button:hover {
+  border-color: rgba(37,99,235,0.9);
+  box-shadow: 0 0 54px rgba(37,99,235,0.28), inset 0 0 34px rgba(37,99,235,0.12);
+}
+.core-button--pop {
+  transform: scale(0.94) rotate(-1deg);
+}
+.core-button__emoji {
+  z-index: 1;
+  font-size: clamp(4.6rem, 13vw, 7rem);
+  filter: drop-shadow(0 0 22px rgba(37,99,235,0.75));
+  animation: coreIdle 1.6s ease-in-out infinite;
+}
+.core-button__glow {
+  position: absolute;
+  width: 56%;
+  height: 56%;
+  background: rgba(37,99,235,0.2);
+  filter: blur(28px);
+}
+.hit-pop {
+  position: absolute;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-pixel-sm);
+  font-size: 0.72rem;
+  color: #fff;
+  text-shadow: 0 0 12px rgba(37,99,235,0.9);
+  pointer-events: none;
+  animation: hitPop 0.52s ease-out forwards;
+}
+.clicker__hud {
+  display: grid;
+  gap: 0.75rem;
+}
+.clicker__hud strong {
+  color: var(--text);
+  font-weight: 400;
+}
+.clicker__hp {
+  height: 10px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.06);
+}
+.clicker__hp i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), #60a5fa);
+  border-radius: inherit;
+  transition: width 0.12s ease-out;
+}
+@keyframes coreIdle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes hitPop {
+  0% { opacity: 0; transform: translate(-50%, -20%) scale(0.7); }
+  18% { opacity: 1; transform: translate(-50%, -50%) scale(1.25); }
+  100% { opacity: 0; transform: translate(-50%, -115%) scale(1); }
+}
 
 /* ══════════════════════════════
    FEATURES
@@ -341,6 +498,15 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   aspect-ratio: 4/3;
   position: relative;
   border: 1px solid var(--border);
+}
+.feature-media--link {
+  display: block;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+.feature-media--link:hover {
+  transform: translateY(-4px);
+  border-color: rgba(37,99,235,0.45);
+  box-shadow: 0 0 40px rgba(37,99,235,0.14);
 }
 .game-screen {
   width: 100%; height: 100%;
@@ -584,6 +750,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    ══════════════════════════════ */
 @media (max-width: 768px) {
   .nav__links { display: none; }
+  .clicker__shell { grid-template-columns: 1fr; }
+  .clicker__machine { min-height: auto; }
   .feature-item { grid-template-columns: 1fr; gap: 2rem; }
   .feature-item--reverse .feature-media { order: 0; }
   .feature-media { aspect-ratio: 16/9; }

@@ -20,11 +20,9 @@
 
 - **이름**: PIXELFORGE STUDIOS (픽셀포지 스튜디오)
 - **개업**: 2025년 12월 25일
-- **장르**: 레트로 픽셀 RPG 모바일 게임 (포켓몬 1세대 감성)
-- **개발 중인 게임 3종**:
-  1. Monster Chronicle (몬스터 크로니클) — 수집형 턴제 RPG, 초록 계열
-  2. Dungeon Bits (던전 비츠) — 퍼마데스 로그라이크, 빨간 계열
-  3. Pixel Knights Online (픽셀 나이츠 온라인) — 픽셀 MMORPG, 파란 계열
+- **장르**: 레트로 픽셀 웹게임 / 모바일 게임 (포켓몬 1세대 감성)
+- **현재 대표 게임**: FORGE POP
+- **게임 방식**: 로열 코어를 클릭해 비트를 모으고 콤보와 랭크를 올리는 간단한 픽셀 클리커
 
 ---
 
@@ -33,8 +31,9 @@
 ### ✅ 해야 하는 것
 - **전체 다크 배경**: `#080808`, `#0f0f0f`, `#131313` 계열만 사용
 - **단일 강조색**: `#2563eb` 로열블루만 CTA/강조에 사용
-- **Mona 픽셀 폰트**: 헤딩, 배지, 라벨 (`font-family: 'Mona12', 'Mona10', monospace`)
+- **Mona 픽셀 폰트**: 헤딩, 배지, 라벨, 게임 UI (`font-family: 'Mona12', 'Mona10', monospace`)
   - CDN: `https://cdn.jsdelivr.net/gh/MonadABXY/mona-font/web/mona.css`
+- **Mona 픽셀 이모지**: 게임 스프라이트와 아이콘은 `.pixel-emoji`로 처리
 - **Plus Jakarta Sans**: 본문 설명 텍스트 (`color: var(--text-muted)`)
 - **실제 콘텐츠만**: 있는 것만 표시. 없으면 없다고 하거나 빈칸
 
@@ -54,12 +53,12 @@
 
 ```
 App.jsx
-├── Navbar      — 스크롤 글래스모피즘, Games/Contact 링크만
+├── Navbar      — 스크롤 글래스모피즘, Play/Game/Contact 링크
 ├── Hero        — 풀스크린 다크, 글래스모피즘 CTA
-├── Features    — 3 게임 지그재그 레이아웃 + CSS 게임 화면 목업
-├── Gallery     — 2행 무한 마키 (row1: 왼쪽, row2: 오른쪽)
+├── PixelClicker — 실제 플레이 가능한 FORGE POP 클리커
+├── Features    — FORGE POP 단일 게임 소개 + CSS 게임 화면 목업
 ├── BottomCTA   — 이메일 CTA (ssujklim@gmail.com)
-└── Footer      — Games + Contact 컬럼만
+└── Footer      — Game + Contact 컬럼만
 ```
 
 **삭제된 컴포넌트 (복원하지 말 것):**
@@ -68,6 +67,7 @@ App.jsx
 - `Team.jsx` — 실제 팀원 정보 없어 삭제
 - `Contact.jsx` — BottomCTA로 대체됨
 - `Header.jsx` — Navbar.jsx로 대체됨
+- `Gallery.jsx` — 3개 세계 마키가 현재 방향과 맞지 않아 삭제
 
 ---
 
@@ -110,8 +110,8 @@ git remote set-url origin "https://github.com/restboy2606/2026-06-08.git"
 | 항목 | 상태 | 메모 |
 |------|------|------|
 | 모바일 햄버거 메뉴 | ❌ 미구현 | 768px 이하에서 nav 링크 `display: none` 상태 |
-| 실제 게임 아트 | ❌ 없음 | Gallery는 이모지 플레이스홀더 |
-| 각 게임 상세 페이지 | ❌ 없음 | Features 섹션에서 바로 상세로 이동 불가 |
+| 실제 게임 아트 | ❌ 없음 | 현재는 Mona 픽셀 이모지 기반 |
+| 각 게임 상세 페이지 | ❌ 없음 | Features에서 플레이 섹션으로 이동 |
 | Mona 폰트 로드 검증 | ⚠️ 미확인 | CDN 로드 실패 시 `Press Start 2P` 폴백 |
 
 ---
@@ -122,4 +122,5 @@ git remote set-url origin "https://github.com/restboy2606/2026-06-08.git"
 
 1. **v1** — Press Start 2P 풀 픽셀, 섹션 많음, AI 슬롭 느낌
 2. **v2** — 프리미엄 SaaS 리디자인 (흰/검 교차, 글래스모피즘)
-3. **v3 (현재)** — 전체 다크, Mona 폰트, 가짜 콘텐츠 전부 제거
+3. **v3** — 전체 다크, Mona 폰트, 가짜 콘텐츠 전부 제거
+4. **v4 (현재)** — FORGE POP 픽셀 클리커 추가, 게임 소개를 단일 게임으로 축소

@@ -4,23 +4,22 @@
 > 배포: https://restboy2606.github.io/2026-06-08/
 
 레트로 픽셀 RPG 모바일 게임 회사 `PIXELFORGE STUDIOS`의 공식 홈페이지입니다.  
-React 19와 Vite 6로 제작했고, 포켓몬 1세대 감성의 픽셀 무드와 다크한 프리미엄 랜딩 구조를 결합했습니다.
+React 19와 Vite 6로 제작했고, Mona 픽셀 폰트 기반의 다크 랜딩 페이지 안에 아주 작은 웹 클리커 게임 `FORGE POP`을 넣었습니다.
 
 ## 브랜드 설정
 
 - 회사명: `PIXELFORGE STUDIOS`
 - 개업일: `2025-12-25`
-- 장르: 레트로 픽셀 RPG 모바일 게임
-- 대표 게임:
-  - `Monster Chronicle`
-  - `Dungeon Bits`
-  - `Pixel Knights Online`
+- 장르: 레트로 픽셀 웹게임 / 모바일 게임
+- 대표 게임: `FORGE POP`
+- 게임 방식: 로열 코어를 클릭해 비트를 모으고 콤보와 랭크를 올리는 간단한 클리커
 
 ## 디자인 원칙
 
 - 전체 다크 배경: `#080808`, `#0f0f0f`, `#131313`
 - 단일 강조색: `#2563eb`
-- 헤딩/배지/라벨: `Mona` 픽셀 폰트
+- 헤딩/배지/라벨/게임 UI: `Mona` 픽셀 폰트
+- 이모지 스프라이트: `Mona12 Color Emoji`, `Mona12 Emoji`
 - 본문: `Plus Jakarta Sans`
 - 없는 정보는 만들지 않음
 
@@ -36,10 +35,10 @@ React 19와 Vite 6로 제작했고, 포켓몬 1세대 감성의 픽셀 무드와
 
 1. `Navbar` - 스크롤 시 글래스모피즘 처리
 2. `Hero` - 픽셀 브랜드 메시지와 CTA
-3. `Features` - 3종 게임 소개와 CSS 게임 화면 목업
-4. `Gallery` - 무한 마키 기반 갤러리
+3. `PixelClicker` - 실제 플레이 가능한 `FORGE POP` 클리커 게임
+4. `Features` - `FORGE POP` 단일 게임 소개
 5. `BottomCTA` - 실제 메일 주소로 연결되는 문의 CTA
-6. `Footer` - 게임 목록과 연락처
+6. `Footer` - 게임과 연락처
 
 ## 로컬 실행
 
@@ -62,5 +61,5 @@ npm run build
 
 ## 문서
 
-- 개발일지: [docs/개발일지.md](/C:/Users/USER/Desktop/restboy2606_FULL/restboy2606/2026-06-08/docs/개발일지.md)
-- AI 인계 문서: [CLAUDE.md](/C:/Users/USER/Desktop/restboy2606_FULL/restboy2606/2026-06-08/CLAUDE.md)
+- 개발일지: [docs/개발일지.md](docs/개발일지.md)
+- AI 인계 문서: [CLAUDE.md](CLAUDE.md)

@@ -15,11 +15,10 @@ export default function Footer() {
         </div>
 
         <div className="footer-col">
-          <h4>Games</h4>
+          <h4>Game</h4>
           <ul>
-            <li><a href="#features">Monster Chronicle</a></li>
-            <li><a href="#features">Dungeon Bits</a></li>
-            <li><a href="#features">Pixel Knights</a></li>
+            <li><a href="#play">Forge Pop</a></li>
+            <li><a href="#features">Game Info</a></li>
           </ul>
         </div>
 

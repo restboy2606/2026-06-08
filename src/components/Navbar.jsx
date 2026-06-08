@@ -18,12 +18,13 @@ export default function Navbar() {
 
       <nav>
         <ul className="nav__links">
-          <li><a href="#features">Games</a></li>
+          <li><a href="#play">Play</a></li>
+          <li><a href="#features">Game</a></li>
           <li><a href="#cta">Contact</a></li>
         </ul>
       </nav>
 
-      <a href="#cta" className="nav__cta">Play Now →</a>
+      <a href="#play" className="nav__cta">PLAY NOW →</a>
     </header>
   )
 }
