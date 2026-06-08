@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-bg" aria-hidden="true" />
 
-      <div className="hero-badge">⚒ EST. 2025.12.25 · MOBILE PIXEL RPG</div>
+      <div className="hero-badge">⚒ PIXELFORGE STUDIOS · EST. 2025.12.25</div>
 
       <h1 className="hero-title">
         PIXEL BY PIXEL,<br />
@@ -18,11 +18,6 @@ export default function Hero() {
       <a href="#features" className="btn-glass">
         게임 살펴보기 <span className="arrow">→</span>
       </a>
-
-      <div className="hero-scroll" aria-hidden="true">
-        <span>Scroll</span>
-        <div className="scroll-line" />
-      </div>
     </section>
   )
 }

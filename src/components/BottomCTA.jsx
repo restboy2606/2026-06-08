@@ -3,17 +3,19 @@ export default function BottomCTA() {
     <section className="bottom-cta" id="cta">
       <div className="bottom-cta-bg" aria-hidden="true" />
       <div className="bottom-cta-inner">
-        <span className="pill pill--light" style={{ marginBottom: '2rem', display: 'inline-block' }}>
-          지금 바로 시작하기
+        <span className="label" style={{ display: 'block', marginBottom: '1.5rem' }}>
+          Contact
         </span>
-        <h2>당신의 모험은<br />지금부터입니다</h2>
+        <h2>함께 만들어 가고<br />싶으신가요?</h2>
         <p>
-          픽셀 하나에 담긴 세계. 지금 다운로드하고<br />
-          전설의 첫 페이지를 직접 써내려가세요.
+          협업, 파트너십, 채용 문의 모두 환영합니다.
         </p>
-        <a href="#" className="btn-solid">
-          무료로 플레이하기 <span className="arrow">→</span>
+        <a href="mailto:ssujklim@gmail.com" className="btn-solid">
+          메일 보내기 <span className="arrow">→</span>
         </a>
+        <span className="cta-email">
+          또는 직접 메일: <a href="mailto:ssujklim@gmail.com">ssujklim@gmail.com</a>
+        </span>
       </div>
     </section>
   )
