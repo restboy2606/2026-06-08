@@ -1,0 +1,6 @@
+*.hwpx
+*.hwp
+*.pdf
+*.docx
+*.xlsx
+.env
