@@ -3,7 +3,7 @@ export default function Features() {
     <section className="features" id="features">
       <div className="features-header">
         <span className="pill">Featured Game</span>
-        <h2>게임 소개는<br />하나면 충분합니다</h2>
+        <h2>첫 번째 미니게임<br />FORGE POP</h2>
       </div>
 
       <div className="feature-item">
@@ -26,7 +26,7 @@ export default function Features() {
           </div>
         </div>
 
-        <a href="#play" className="feature-media feature-media--link" aria-label="Play Forge Pop">
+        <a href={`${import.meta.env.BASE_URL}play.html`} className="feature-media feature-media--link" aria-label="Play Forge Pop">
           <div className="game-screen game-screen--blue">
             <div className="game-screen__grid" aria-hidden="true" />
             <div className="game-screen__bar">

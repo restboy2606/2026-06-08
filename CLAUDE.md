@@ -12,6 +12,7 @@
 | 이름 | PIXELFORGE STUDIOS 공식 홈페이지 |
 | 레포 | `restboy2606/2026-06-08` |
 | 배포 | https://restboy2606.github.io/2026-06-08/ |
+| 게임 | https://restboy2606.github.io/2026-06-08/play.html |
 | 기술 | React 19 + Vite 6 + 순수 CSS |
 | 작업자 | 임종권 (restboy2606) |
 | 연락처 | ssujklim@gmail.com ← **유일한 실제 연락처, 절대 바꾸지 말 것** |
@@ -22,7 +23,7 @@
 - **개업**: 2025년 12월 25일
 - **장르**: 레트로 픽셀 웹게임 / 모바일 게임 (포켓몬 1세대 감성)
 - **현재 대표 게임**: FORGE POP
-- **게임 방식**: 로열 코어를 클릭해 비트를 모으고 콤보와 랭크를 올리는 간단한 픽셀 클리커
+- **게임 방식**: 로열 코어를 클릭해 비트를 모으고 파워/자동 채굴/크리티컬을 강화하는 픽셀 클리커
 
 ---
 
@@ -55,10 +56,12 @@
 App.jsx
 ├── Navbar      — 스크롤 글래스모피즘, Play/Game/Contact 링크
 ├── Hero        — 풀스크린 다크, 글래스모피즘 CTA
-├── PixelClicker — 실제 플레이 가능한 FORGE POP 클리커
 ├── Features    — FORGE POP 단일 게임 소개 + CSS 게임 화면 목업
 ├── BottomCTA   — 이메일 CTA (ssujklim@gmail.com)
 └── Footer      — Game + Contact 컬럼만
+
+play.jsx
+└── PixelClicker — 독립 `play.html` 페이지에서 실행되는 실제 클리커 게임
 ```
 
 **삭제된 컴포넌트 (복원하지 말 것):**
@@ -111,7 +114,7 @@ git remote set-url origin "https://github.com/restboy2606/2026-06-08.git"
 |------|------|------|
 | 모바일 햄버거 메뉴 | ❌ 미구현 | 768px 이하에서 nav 링크 `display: none` 상태 |
 | 실제 게임 아트 | ❌ 없음 | 현재는 Mona 픽셀 이모지 기반 |
-| 각 게임 상세 페이지 | ❌ 없음 | Features에서 플레이 섹션으로 이동 |
+| 게임 독립 페이지 | ✅ 구현 | `/play.html` |
 | Mona 폰트 로드 검증 | ⚠️ 미확인 | CDN 로드 실패 시 `Press Start 2P` 폴백 |
 
 ---
@@ -123,4 +126,5 @@ git remote set-url origin "https://github.com/restboy2606/2026-06-08.git"
 1. **v1** — Press Start 2P 풀 픽셀, 섹션 많음, AI 슬롭 느낌
 2. **v2** — 프리미엄 SaaS 리디자인 (흰/검 교차, 글래스모피즘)
 3. **v3** — 전체 다크, Mona 폰트, 가짜 콘텐츠 전부 제거
-4. **v4 (현재)** — FORGE POP 픽셀 클리커 추가, 게임 소개를 단일 게임으로 축소
+4. **v4** — FORGE POP 픽셀 클리커 추가, 게임 소개를 단일 게임으로 축소
+5. **v5 (현재)** — 클리커를 `play.html` 독립 페이지로 분리, 업그레이드/자동 채굴/크리티컬/타격감 강화

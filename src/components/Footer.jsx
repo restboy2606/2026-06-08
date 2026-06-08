@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="footer-col">
           <h4>Game</h4>
           <ul>
-            <li><a href="#play">Forge Pop</a></li>
+            <li><a href={`${import.meta.env.BASE_URL}play.html`}>Forge Pop</a></li>
             <li><a href="#features">Game Info</a></li>
           </ul>
         </div>

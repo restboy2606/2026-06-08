@@ -18,7 +18,7 @@ export default function Hero() {
         클릭하고, 터뜨리고, 비트를 모으세요.
       </p>
 
-      <a href="#play" className="btn-glass">
+      <a href={`${import.meta.env.BASE_URL}play.html`} className="btn-glass">
         바로 플레이 <span className="arrow">→</span>
       </a>
     </section>

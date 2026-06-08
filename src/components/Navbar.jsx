@@ -24,7 +24,7 @@ export default function Navbar() {
         </ul>
       </nav>
 
-      <a href="#play" className="nav__cta">PLAY NOW →</a>
+      <a href={`${import.meta.env.BASE_URL}play.html`} className="nav__cta">PLAY NOW →</a>
     </header>
   )
 }
